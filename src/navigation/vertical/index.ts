@@ -8,7 +8,7 @@ const navigation = (): VerticalNavItemsType => {
       path: '/admin'
     },
     {
-      sectionTitle: 'Auth4Flow'
+      sectionTitle: 'Auth'
     },
     {
       title: 'Users & Tenants',
@@ -117,7 +117,7 @@ const navigation = (): VerticalNavItemsType => {
       ]
     },
     {
-      sectionTitle: 'Alerts4Flow'
+      sectionTitle: 'Alerts'
     },
     {
       title: 'Event Monitors',

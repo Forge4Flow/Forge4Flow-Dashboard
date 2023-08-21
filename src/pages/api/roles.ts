@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next/types'
-import { withSessionPermission, Forge4FlowServer, CreateUserParams } from '@forge4flow/forge4flow-nextjs'
+import { withSessionFeature, Forge4FlowServer, CreateUserParams } from '@forge4flow/forge4flow-nextjs'
 
 const roles = async (req: NextApiRequest, res: NextApiResponse) => {
   const forge4flow = new Forge4FlowServer({
@@ -43,4 +43,4 @@ const roles = async (req: NextApiRequest, res: NextApiResponse) => {
   res.status(500).json({ message: 'Unknown Error' })
 }
 
-export default withSessionPermission('forge4flow-admin', roles)
+export default withSessionFeature('forge4flow-admin', roles)

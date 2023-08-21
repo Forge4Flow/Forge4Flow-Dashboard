@@ -39,7 +39,7 @@ const AuthGuard = (props: AuthGuardProps) => {
             }
           }
 
-          const isAdmin = await auth.hasPermission({ permissionId: 'forge4flow-admin' })
+          const isAdmin = await auth.hasFeature({ featureId: 'forge4flow-admin' })
           if (!isAdmin) {
             router.replace('/401')
           }

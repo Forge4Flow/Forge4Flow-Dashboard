@@ -56,52 +56,52 @@ const CreateUserForm = ({ closeHandler }: CreateUserFormProps) => {
     <>
       <Card>
         <CardContent>
-          <TabContext value={currentTab}>
+          {/* <TabContext value={currentTab}>
             <TabList variant='fullWidth' onChange={handleTabChange} aria-label='new user tabs'>
               <Tab value='native' label='Flow Native' />
               <Tab value='walletless' label='Walletless' />
             </TabList>
-            <TabPanel value='native'>
-              <form onSubmit={e => e.preventDefault()}>
-                <Grid container spacing={5}>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      label='Wallet Address'
-                      placeholder='0xf8d6e0586b0a20c7'
-                      required={true}
-                      value={walletAddress}
-                      onChange={e => setWalletAddress(e.target.value)}
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position='start'>
-                            <AccountOutline />
-                          </InputAdornment>
-                        )
-                      }}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      type='email'
-                      label='Email'
-                      placeholder='AwesomeUser@Forge4Flow.com'
-                      helperText='optional'
-                      value={email}
-                      onChange={e => setEmail(e.target.value)}
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position='start'>
-                            <EmailOutline />
-                          </InputAdornment>
-                        )
-                      }}
-                    />
-                  </Grid>
-                </Grid>
-              </form>
-            </TabPanel>
+            <TabPanel value='native'> */}
+          <form onSubmit={e => e.preventDefault()}>
+            <Grid container spacing={5}>
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  label='Wallet Address'
+                  placeholder='0xf8d6e0586b0a20c7'
+                  required={true}
+                  value={walletAddress}
+                  onChange={e => setWalletAddress(e.target.value)}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'>
+                        <AccountOutline />
+                      </InputAdornment>
+                    )
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  type='email'
+                  label='Email'
+                  placeholder='AwesomeUser@Forge4Flow.com'
+                  helperText='optional'
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'>
+                        <EmailOutline />
+                      </InputAdornment>
+                    )
+                  }}
+                />
+              </Grid>
+            </Grid>
+          </form>
+          {/* </TabPanel>
             <TabPanel value='walletless'>
               <form onSubmit={e => e.preventDefault()}>
                 <Grid container spacing={5}>
@@ -124,7 +124,7 @@ const CreateUserForm = ({ closeHandler }: CreateUserFormProps) => {
                 </Grid>
               </form>
             </TabPanel>
-          </TabContext>
+          </TabContext> */}
           <Grid item xs={12}>
             <Button type='submit' variant='contained' size='large' onClick={handleCreateUser}>
               Create User
