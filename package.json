@@ -39,10 +39,10 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "@emotion/cache": "11.10.8",
+    "@emotion/cache": "11.11.0",
     "@emotion/react": "11.10.8",
     "@emotion/server": "11.10.0",
-    "@emotion/styled": "11.10.8",
+    "@emotion/styled": "11.11.0",
     "@forge4flow/forge4flow-nextjs": "0.0.7",
     "@iconify/react": "^4.1.1",
     "@mui/icons-material": "^5.14.0",
