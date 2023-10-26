@@ -11,6 +11,21 @@ const navigation = (): VerticalNavItemsType => {
       sectionTitle: 'Auth'
     },
     {
+      title: 'Flow Control',
+      children: [
+        {
+          title: 'Event Actions',
+          icon: 'mdi:archive-outline',
+          path: '/admin/auth4flow/nfts'
+        },
+        {
+          title: 'Script Verifiers',
+          icon: 'mdi:archive-outline',
+          path: '/admin/auth4flow/nfts/verifiers'
+        }
+      ]
+    },
+    {
       title: 'Users & Tenants',
       children: [
         {
@@ -21,29 +36,12 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Tenants',
           icon: 'mdi:archive-outline',
-          path: '#',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          path: '#'
         }
       ]
     },
     {
-      title: 'NFT Gated Access Control',
-      children: [
-        {
-          title: 'Verifiers',
-          icon: 'mdi:archive-outline',
-          path: '/admin/auth4flow/nfts/verifiers'
-        },
-        {
-          title: 'Tracked NFTs',
-          icon: 'mdi:archive-outline',
-          path: '/admin/auth4flow/nfts'
-        }
-      ]
-    },
-    {
-      title: 'Role Based Access Control',
+      title: 'Role Based Control',
       children: [
         {
           title: 'Roles',
@@ -58,35 +56,27 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Check',
           icon: 'mdi:archive-outline',
-          path: '/admin/auth4flow/rbac/check',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          path: '/admin/auth4flow/rbac/check'
         }
       ]
     },
     {
-      title: 'Fine Grained Access Control',
+      title: 'Fine Grained Control',
       children: [
         {
           title: 'Object Types',
           icon: 'mdi:archive-outline',
-          path: '/admin/auth4flow/fgac/object-types',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          path: '/admin/auth4flow/fgac/object-types'
         },
         {
           title: 'Objects',
           path: '/admin/auth4flow/fgac/objects',
-          icon: 'mdi:archive-outline',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          icon: 'mdi:archive-outline'
         },
         {
           title: 'Check',
           icon: 'mdi:archive-outline',
-          path: '/admin/auth4flow/fgac/check',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          path: '/admin/auth4flow/fgac/check'
         }
       ]
     },
@@ -96,23 +86,17 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Pricing Tiers',
           icon: 'mdi:archive-outline',
-          path: '#',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          path: '#'
         },
         {
           title: 'Features',
           path: '#',
-          icon: 'mdi:archive-outline',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          icon: 'mdi:archive-outline'
         },
         {
           title: 'Check',
           icon: 'mdi:archive-outline',
-          path: '#',
-          badgeContent: 'API Only Currently',
-          disabled: true
+          path: '#'
         }
       ]
     },
@@ -120,42 +104,17 @@ const navigation = (): VerticalNavItemsType => {
       sectionTitle: 'Alerts'
     },
     {
-      title: 'Event Monitors',
+      title: 'Flow Events',
       icon: 'mdi:archive-outline',
       path: '/admin/alerts4flow/monitors'
     },
     {
-      title: 'Webhooks',
+      title: 'Forge Events',
       icon: 'mdi:archive-outline',
-      path: '#',
-      badgeContent: 'Coming Soon',
-      disabled: true
+      path: '/admin/alerts4flow/monitors',
+      disabled: true,
+      badgeContent: 'Coming Soon'
     }
-    // {
-    //   sectionTitle: 'Ecosystem SDKs'
-    // },
-    // {
-    //   title: 'Swift (iOS)',
-    //   children: [
-    //     {
-    //       title: 'FLOAT',
-    //       icon: 'mdi:archive-outline',
-    //       path: '/admin/sdks/float'
-    //     },
-    //     {
-    //       title: '.find',
-    //       icon: 'mdi:archive-outline',
-    //       path: '/admin/sdks/find'
-    //     },
-    //     {
-    //       title: 'NFT Catalog',
-    //       icon: 'mdi:archive-outline',
-    //       path: '/admin/sdks/nft-storage',
-    //       badgeContent: 'Coming Soon',
-    //       disabled: true
-    //     }
-    //   ]
-    // }
   ]
 }
 
