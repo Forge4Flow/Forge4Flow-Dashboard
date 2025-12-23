@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@emotion/cache": "11.10.8",
-    "@emotion/react": "11.10.8",
+    "@emotion/react": "11.11.1",
     "@emotion/server": "11.10.0",
     "@emotion/styled": "11.10.8",
     "@forge4flow/forge4flow-nextjs": "0.0.7",
