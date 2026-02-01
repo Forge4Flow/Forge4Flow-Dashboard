@@ -6,7 +6,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Create the final image
-FROM alpine:3.22.2
+FROM alpine:3.23.3
 
 RUN apk add --update nodejs npm
 
